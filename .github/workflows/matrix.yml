@@ -13,7 +13,7 @@ jobs:
       - name: Install Node JS
         uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: ${{ matrix.nver }}
       - name: Install Dependencies
         run: npm ci
       - name: Build project
